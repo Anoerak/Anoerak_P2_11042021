@@ -175,3 +175,71 @@ section p {
     width: 1rem;
     border-radius: 5000px;
 }
+
+article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.hebergement {
+    display: flex;
+    margin-right: 0.5rem;
+    padding: auto;
+    height: 100%;
+    width: 66%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+aside {
+    display: flex;
+    margin-left: 0.5rem;
+    width: 33%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+article .hebergement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+article .hebergement h2 {
+    width: 100%;
+    margin-left: 2rem;
+}
+
+
+article .hebergement .card {
+    margin: 1rem;
+    width: 15rem;
+    height: 18rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+article .hebergement .card img {
+    border-radius: 10px 10px;
+    height: 50%;
+}
+
+article .hebergement .card .container {
+    padding-left: 0.5rem;
+}
+article .hebergement .card i {
+    color: #0065FC;
+}
+
+article .hebergement .card .unrated i {
+    color: #F2F2F2;
+}

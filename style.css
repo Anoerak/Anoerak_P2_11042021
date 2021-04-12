@@ -1,5 +1,6 @@
 * {
     font-family: 'Raleway', sans-serif;;
+    margin-left: 0.2rem;
 }
 
 header {
@@ -34,18 +35,145 @@ header nav ul li a {
 }
 
 header nav ul li a:visited {
-    color: blue;
+    color: #0065FC;
 }
 
-header nav ul li a:active {
+header nav ul li a:hover {
     color: gray;
 }
 
 header nav ul li:hover {
-    border-top: 1px solid blue;
+    border-top: 1px solid #0065FC;
 }
 
 header nav ul li {
     height: 4rem;
     padding-top: 2rem;
+}
+
+section {
+    line-height: 1.5rem;
+}
+
+section p {
+    font-weight: normal;
+}
+
+.searchbar {
+    height: 2rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchbar i {
+    display: block;
+    background-color: lightgray;
+    height: 2.5rem;
+    width: 2.5rem;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.25px;
+}
+
+.searchbar input {
+    position: absolute;
+    margin-left: 2rem;
+    width: 14.75rem;
+    height: 2.2rem;
+    padding-bottom: 2px;
+    padding-left: 1rem;
+    outline: none;
+    border: solid 1px lightgray;
+    border-left: none;
+    border-right: none;
+    font-size: 1rem;
+}
+
+.searchbar button {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 7.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: #0065FC;
+    color: #fff;
+    font-weight: normal ;
+    font-size: 1rem;
+    margin-bottom: 0.25px;
+    text-align: center;
+    outline: none;
+}
+
+.searchbar button:hover {
+    background-color: rgba(0, 0, 255, 0.75);
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.filter {
+    margin-left: 3rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 2rem;
+}
+
+.filter i {
+    position: absolute;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    height: calc(3rem - 1.4rem);
+    width: 2.25rem;
+    border-radius: 100vh;
+    padding-top: 10px;
+}
+
+.filter input {
+    height: 1.99rem;
+    width: 7rem;
+    border-radius: 2rem;
+    text-align: left;
+    padding-left: 2.5rem;
+    margin-left: 4px;
+    margin-top: 0.5px;
+    border: none;
+    border: solid 0.5px gray;
+    border-left: none;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.information a {
+    margin: 0 0.5rem 0 0.5rem;
+    text-decoration: none;
+    border: none;
+}
+
+.information p {
+    font-weight: lighter;
+}
+
+.information a i {
+    color: #fff;
+    background-color: #0065FC;
+    border: solid gray 0.5px ;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 5000px;
 }

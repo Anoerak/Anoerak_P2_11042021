@@ -1,8 +1,9 @@
 * {
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
 }
 
 header {
+    margin: 1rem;
     display: flex;
     height: 10rem;
     flex-direction: row;
@@ -51,6 +52,7 @@ header nav ul li {
 }
 
 section {
+    margin: 1rem;
     line-height: 1.5rem;
 }
 
@@ -177,19 +179,24 @@ section p {
 }
 
 article {
+    border: 2px solid blue;
+    margin: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    height: 100%;
+    height: auto;
 }
 
 .hebergement {
     display: flex;
-    margin-right: 0.5rem;
-    padding: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
     height: 100%;
-    width: 66%;
+    padding-bottom: 10px;
+    padding-left: 1rem;
     background-color: #F2F2F2;
     border-radius: 10px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
@@ -197,20 +204,12 @@ article {
 
 aside {
     display: flex;
-    margin-left: 0.5rem;
-    width: 33%;
+    margin-left: 1rem;
+    width: 30%;
     height: 100%;
     background-color: #F2F2F2;
     border-radius: 10px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
-}
-
-article .hebergement {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
 }
 
 article .hebergement h3 {
@@ -218,19 +217,35 @@ article .hebergement h3 {
     margin-left: 2rem;
 }
 
+article .hebergement a {
+    color: black;
+    text-decoration: none;
+}
 
 article .hebergement .card {
-    margin: 1rem;
-    width: 15rem;
-    height: 18rem;
+    display: block;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 400px;
+    padding: 5px;
+    width: 30%;
+    height: 40%;
+    padding-bottom: 1rem;
     background: #fff;
     border-radius: 10px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 }
 
+article .hebergement .card:hover {
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.30),3px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+
 article .hebergement .card img {
-    border-radius: 10px 10px;
-    height: 50%;
+    border-radius: 10px 10px 0 0;
+    height: 150px;
+    width: 200px;
 }
 
 article .hebergement .card .container {
@@ -243,3 +258,193 @@ article .hebergement .card i {
 article .hebergement .card .unrated i {
     color: #F2F2F2;
 }
+
+
+.article2{
+    border: 2px red solid;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.article2 .activites h3 {
+    width: 100%;
+    margin-left: 2rem;
+}
+.article2 .activites{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.article2 .activites .col1 {
+    display: block;
+    height: 85%;
+    width: 23%;
+    max-width: 350px;
+    border-radius: 15px;
+    margin: 1rem;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+}
+.article2 .col1 img{
+    border-radius: 10px 10px 0 0;
+    height: 515px;
+    object-fit: cover;
+}
+.col1 .lieu{
+    padding: 0;
+    padding-left: 1rem;
+}
+
+
+.article2 .activites .col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 23%;
+    border-radius: 15px;
+}
+.article2 .col2 .img1, .article2 .col2 .img2 {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    margin: 1rem;
+    border-radius: 15px;
+    height: 30%;
+}
+.article2 .col2 img{
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    max-width: 350px;
+    object-fit: cover;
+}
+.col2 .lieu{
+    padding-left: 1rem;
+    height: 10%;
+}
+.article2 .activites .col1:hover, .article2 .activites .col2 .img1:hover, .article2 .activites .col2 .img2:hover{
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.30),3px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer div {
+    display: block;
+    padding-left: 2rem;
+    width: 30%;
+}
+
+footer div ul {
+    list-style: none;
+    line-height: 2rem;
+    padding: 0;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    article {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: start ;
+        width: 100%;
+        border: none;
+    }
+    article aside{
+        margin-bottom: 40px;
+    }
+    article .hebergement{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+    article .hebergement .card{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+    article {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: start ;
+        width: 100%;
+        border: none;
+    }
+    article aside{
+        margin-bottom: 40px;
+    }
+    article .hebergement{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+    article .hebergement .card{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin: 10px;
+        width: 45%;
+        min-width: 250px;
+    }
+
+}
+
+@media (max-width: 980px) {
+    footer {
+        position: relative;
+        bottom: 0;
+        margin-top: auto;
+    }
+
+    footer div{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+

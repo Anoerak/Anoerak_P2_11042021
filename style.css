@@ -2,6 +2,15 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body{
+    display: block;
+    width: 1920px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+}
+
 header {
     margin: 1rem;
     display: flex;
@@ -377,7 +386,13 @@ footer div ul li a {
 
 
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
+    body{
+        display: inherit;
+        width: inherit;
+        margin: none;
+        padding: none;
+    }
     article {
         display: flex;
         flex-direction: column-reverse;
@@ -404,7 +419,13 @@ footer div ul li a {
     }
 }
 
-@media (max-width: 900px) and (min-width: 600px) {
+@media (max-width: 1920px) and (min-width: 600px) {
+    body{
+        display: inherit;
+        width: inherit;
+        margin: none;
+        padding: none;
+    }
     article {
         display: flex;
         flex-direction: column-reverse;
@@ -428,12 +449,12 @@ footer div ul li a {
         margin: auto;
         margin: 10px;
         width: 45%;
-        min-width: 250px;
+        min-width: 400px;
     }
 
 }
 
-@media (max-width: 980px) {
+@media (max-width: 880px) {
     footer {
         position: relative;
         bottom: 0;

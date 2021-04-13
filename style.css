@@ -4,7 +4,8 @@
 
 body{
     display: block;
-    width: 1920px;
+    max-width: 1800px;
+    width: 1800px;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -31,7 +32,6 @@ header nav ul {
     margin-bottom: 0;
     width: 30rem;
     height: 9.8rem;
-    margin-right: 4.5rem;
     list-style: none;
     display: flex;
     vertical-align: top;
@@ -187,43 +187,80 @@ section p {
     border-radius: 5000px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 article {
-    border: 2px solid blue;
-    margin: 1rem;
+    border: 2px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: auto;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .hebergement {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 70%;
+    flex-direction: column;
+    width: 63%;
     height: 100%;
     padding-bottom: 10px;
     padding-left: 1rem;
     background-color: #F2F2F2;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.pannel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 aside {
     display: flex;
-    margin-left: 1rem;
-    width: 30%;
-    height: 100%;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 33%;
     background-color: #F2F2F2;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 article .hebergement h3 {
+    flex: inline-block;
     width: 100%;
     margin-left: 2rem;
+    align-items: left;
 }
 
 article .hebergement a {
@@ -233,9 +270,9 @@ article .hebergement a {
 
 article .hebergement .card {
     display: block;
-    margin: 10px;
-    min-width: 250px;
-    max-width: 400px;
+    margin: 20px;
+    min-width: 300px;
+    max-width: 300px;
     padding: 5px;
     width: 30%;
     height: 40%;
@@ -255,23 +292,79 @@ article .hebergement .card img {
     border-radius: 10px 10px 0 0;
     height: 150px;
     width: 200px;
+    object-fit: cover;
 }
 
 article .hebergement .card .container {
     padding-left: 0.5rem;
 }
-article .hebergement .card i {
+article .hebergement i, aside .containerpop i {
     color: #0065FC;
 }
 
-article .hebergement .card .unrated i {
+article .hebergement .unrated i, aside .containerpop .unrated i{
     color: #F2F2F2;
 }
 
 
+
+
+.asidetitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+aside .cardpop{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 5px;
+    background: #FFF;
+    border-radius: 10px;
+    min-width: 430px;
+    height: 206px;
+}
+
+aside .cardpop .containerpop{
+    padding-bottom: 0;
+    padding-left: 20px;
+}
+
+
+aside img{
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px 0 0 10px;
+}
+aside .cardpop:hover{
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.30),3px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .article2{
     border: 2px red solid;
-    margin: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -386,12 +479,25 @@ footer div ul li a {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
     body{
         display: inherit;
-        width: inherit;
+        width: 100%;
         margin: none;
         padding: none;
+    }
+    header nav ul {
+        visibility: hidden;
+    }
+    .filters{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    aside{
+        margin-bottom: 40px;
+        border: none;
+        box-shadow: none;
+        width: 100%;
     }
     article {
         display: flex;
@@ -400,31 +506,56 @@ footer div ul li a {
         justify-content: start ;
         width: 100%;
         border: none;
+        margin: 0;
+        padding: 0;
     }
-    article aside{
-        margin-bottom: 40px;
-    }
+    
     article .hebergement{
         background-color: transparent;
         border: none;
         box-shadow: none;
+        width: 100%;
     }
     article .hebergement .card{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
-        margin: auto;
-        margin-bottom: 20px;
+        justify-content: left;
         width: 100%;
+        max-width: 600px;
+    }
+    .activites {
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+    }
+    .article2 .col1{
+        width: 100%;
+        height: 20%;
     }
 }
 
-@media (max-width: 1920px) and (min-width: 600px) {
+@media (max-width: 880px) and (min-width: 660px) {
     body{
         display: inherit;
         width: inherit;
         margin: none;
         padding: none;
+    }
+    .filters{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    aside{
+        margin-bottom: 40px;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        margin-bottom: 40px;
     }
     article {
         display: flex;
@@ -433,26 +564,46 @@ footer div ul li a {
         justify-content: start ;
         width: 100%;
         border: none;
-    }
-    article aside{
-        margin-bottom: 40px;
+        margin: none;
     }
     article .hebergement{
         background-color: transparent;
         border: none;
         box-shadow: none;
+        width: 100%;
     }
     article .hebergement .card{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         margin: auto;
         margin: 10px;
         width: 45%;
-        min-width: 400px;
+        max-width: 400px;
     }
-
+    .article2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start ;
+        width: 100%;
+        border: none;
+        margin: none;
+    }
+    .article2 .activites{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin: 10px;
+        width: 100%;
+    }
 }
+
 
 @media (max-width: 880px) {
     footer {
@@ -468,4 +619,3 @@ footer div ul li a {
         text-align: center;
     }
 }
-

@@ -1,0 +1,64 @@
+@media screen and (max-width: 880px) and (min-width: 660px) {
+    body{
+        display: inherit;
+        width: inherit;
+        margin: none;
+        padding: none;
+    }
+    .filters{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    aside{
+        margin-bottom: 40px;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    article {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: start ;
+        width: 100%;
+        border: none;
+        margin: none;
+    }
+    article .hebergement{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+    }
+    article .hebergement .card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin: 10px;
+        width: 45%;
+        max-width: 400px;
+    }
+    .article2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start ;
+        width: 100%;
+        border: none;
+        margin: none;
+    }
+    .article2 .activites{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin: 10px;
+        width: 100%;
+    }
+}

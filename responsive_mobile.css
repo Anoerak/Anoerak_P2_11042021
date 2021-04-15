@@ -1,0 +1,84 @@
+@media screen and (max-width: 660px) {
+    body{
+        display: inherit;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .filters{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filters h3{
+        display: inline-block;
+        width: 100%;
+    }
+    .filters .filter{
+        margin: 10px;
+    }
+    aside{
+        margin-bottom: 40px;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        border-radius: 0;
+    }
+    article {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: start ;
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    article .hebergement{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+    }
+    article .hebergement .card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+        max-width: 600px;
+    }
+    .article2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start ;
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .article2 .activites{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+    }
+    .article2 .activites .hebergement .activitescard{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+        max-width: 600px;
+    }
+}

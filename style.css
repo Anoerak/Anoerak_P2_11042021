@@ -4,8 +4,7 @@
 
 body{
     display: block;
-    max-width: 1425px;
-    width: 1425px;
+    width: 1440px;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -19,14 +18,12 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
 header img {
     box-sizing: border-box;
     width: 10rem;
     margin-bottom: 3.5rem;
     margin-left: 2rem;
 }
-
 header nav ul {
     margin-bottom: 0;
     width: 30rem;
@@ -37,23 +34,18 @@ header nav ul {
     align-items: flex-start;
     justify-content: space-around;
 }
-
 header nav ul li a {
     text-decoration: none;
 }
-
 header nav ul li a:visited {
     color: #0065FC;
 }
-
 header nav ul li a:hover {
     color: gray;
 }
-
 header nav ul li:hover {
     border-top: 1px solid #0065FC;
 }
-
 header nav ul li {
     height: 4rem;
     padding-top: 2rem;
@@ -63,7 +55,6 @@ section {
     margin: 1rem;
     line-height: 1.5rem;
 }
-
 section p {
     font-weight: normal;
 }
@@ -74,8 +65,8 @@ section p {
     display: block;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
-
 .searchbar i {
     float: left;
     margin-top: 0.5rem;
@@ -89,7 +80,6 @@ section p {
     width: 7%;
     height: 100%;
 }
-
 .searchbar input {
     width: 55.5%;
     height: 102%;
@@ -102,7 +92,6 @@ section p {
     border-right: none;
     border-bottom: 1px #ddd solid;
 }
-
 .searchbar button {
     float: right;
     width: 30%;
@@ -118,7 +107,6 @@ section p {
 .searchbar input:focus, button:focus{
     outline: none;
 }
-
 .searchbar button:hover {
     background-color: rgba(0, 0, 255, 0.75);
 }
@@ -129,7 +117,6 @@ section p {
     align-items: center;
     justify-content: flex-start;
 }
-
 .filter {
     margin-left: 3rem;
     width: 10rem;
@@ -139,7 +126,6 @@ section p {
     justify-content: flex-start;
     height: 2rem;
 }
-
 .filter i {
     position: absolute;
     background-color: #DEEBFF;
@@ -149,7 +135,6 @@ section p {
     border-radius: 100vh;
     padding-top: 10px;
 }
-
 .filter input {
     height: 1.99rem;
     width: 7rem;
@@ -167,17 +152,14 @@ section p {
     align-items: center;
     justify-content: flex-start;
 }
-
 .information a {
     margin: 0 0.5rem 0 0.5rem;
     text-decoration: none;
     border: none;
 }
-
 .information p {
     font-weight: lighter;
 }
-
 .information a i {
     color: #fff;
     background-color: #0065FC;
@@ -187,30 +169,14 @@ section p {
     border-radius: 5000px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 article {
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: auto;
-    margin: 1rem;
+    margin-bottom: 4rem;
 }
-
 .hebergement {
     display: flex;
     flex-direction: column;
@@ -222,38 +188,23 @@ article {
     border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
 }
-
 .pannel{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    height: 100%;
 }
-
 aside {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    height: 100%;
     width: 38%;
     background-color: #F2F2F2;
     border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 article .hebergement h3 {
     display: inline-block;
@@ -261,12 +212,10 @@ article .hebergement h3 {
     margin-left: 2rem;
     align-items: flex-start;
 }
-
 article .hebergement a {
     color: black;
     text-decoration: none;
 }
-
 article .hebergement .card {
     display: block;
     margin: 20px;
@@ -281,32 +230,24 @@ article .hebergement .card {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
-
 article .hebergement .card:hover {
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.30),3px 3px 12px rgba(0, 0, 0, 0.1);
 }
-
-
 article .hebergement .card img {
     border-radius: 10px 10px 0 0;
     height: 150px;
     width: 200px;
     object-fit: cover;
 }
-
 article .hebergement .card .container {
     padding-left: 0.5rem;
 }
 article .hebergement i, aside .containerpop i {
     color: #0065FC;
 }
-
 article .hebergement .unrated i, aside .containerpop .unrated i{
     color: #F2F2F2;
 }
-
-
-
 
 .asidetitle{
     display: flex;
@@ -316,7 +257,6 @@ article .hebergement .unrated i, aside .containerpop .unrated i{
     padding-right: 2rem;
     padding-left: 2rem;
 }
-
 aside .cardpop{
     display: flex;
     flex-direction: row;
@@ -327,13 +267,10 @@ aside .cardpop{
     min-width: 400px;
     height: 207px;
 }
-
 aside .cardpop .containerpop{
     padding-bottom: 0;
     padding-left: 20px;
 }
-
-
 aside img{
     object-fit: cover;
     max-width: 200px;
@@ -342,65 +279,40 @@ aside img{
 }
 aside .cardpop:hover{
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.30),3px 3px 12px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .article2{
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: auto;
-    margin: 1rem;
+    width: 100%;
+    margin-bottom: 4rem;
 }
 .article2 .activites h3 {
     display: inline-block;
     width: 100%;
-    margin-left: 2rem;
     align-items: flex-start;
 }
 .article2 .activites{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    padding-bottom: 10px;
-    padding-left: 1rem;
-    background-color: #F2F2F2;
+    height: 80%;
 }
-
 .article2 .activitescard{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: stretch;
+    flex-wrap: wrap;
 }
-
 .article2 .activites .col1 {
     display: block;
-    height: 100%;
-    width: 15%;
-    max-width: 350px;
+    width: 23.5%;
     border-radius: 15px;
-    margin: 10px;
+    margin: 10px 0 10px 0;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
-    transition-duration: 0.3s;
 }
 .article2 .col1 img{
     border-radius: 10px 10px 0 0;
@@ -408,44 +320,47 @@ aside .cardpop:hover{
     object-fit: cover;
 }
 .col1 .lieu{
-    padding: 0;
     padding-left: 1rem;
 }
-
-
 .article2 .activites .col2 {
-    display: block;
-    height: 30%;
-    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 23.5%;
     border-radius: 15px;
+    margin: 10px 27px 10px 27px;
 }
-.article2 .col2, .article2 .col1 {
+.article2 .activites .col4 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 23.5%;
+    border-radius: 15px;
+    margin: 10px 0px 10px 27px;
+}
+.col2 .img1, .col2 .img2, .col4 .img1, .col4 .img2{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 45%;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
-    transition-duration: 0.3s;
-    margin: 10px;
-    border-radius: 15px;
-    height: 30%;
 }
-.article2 .col2 img{
+.article2 img{
     border-radius: 10px 10px 0 0;
     height: 200px;
     max-width: 350px;
     object-fit: cover;
 }
-.col2 .lieu{
+.col2 .lieu, .col4 .lieu{
     padding-left: 1rem;
-    height: 10%;
+    height: 10px;
 }
-.article2 .activites .col1:hover, .article2 .activites .col2:hover, .article2 .activites .col2 .img2:hover{
+.article2 .activites .col1:hover, .col2 .img1:hover, .col2 .img2:hover, .col4 .img1:hover, .col4 .img2:hover{
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.30),3px 3px 12px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
 }
-
-
-
-
-
-
-
 
 footer {
     position: relative;
@@ -461,19 +376,16 @@ footer {
     margin-top: auto;
     width: 100%;
 }
-
 footer div {
     display: block;
     padding-left: 2rem;
     width: 30%;
 }
-
 footer div ul {
     list-style: none;
     line-height: 2rem;
     padding: 0;
 }
-
 footer div ul li a {
     text-decoration: none;
     color: darkslategrey;

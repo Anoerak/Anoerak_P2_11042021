@@ -4,14 +4,19 @@
 
 body{
     display: block;
-    width: 1440px;
+    width: 1200px;
     align-items: center;
     justify-content: center;
+    top: 0;
     margin: auto;
 }
 
+header, section, article, .article2{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 header {
-    margin: 1rem;
     display: flex;
     height: 10rem;
     flex-direction: row;
@@ -20,14 +25,13 @@ header {
 }
 header img {
     box-sizing: border-box;
-    width: 10rem;
+    width: 7rem;
     margin-bottom: 3.5rem;
-    margin-left: 2rem;
 }
 header nav ul {
-    margin-bottom: 0;
     width: 30rem;
-    height: 9.8rem;
+    margin-bottom: 5rem;
+    height: 100%;
     list-style: none;
     display: flex;
     vertical-align: top;
@@ -36,6 +40,7 @@ header nav ul {
 }
 header nav ul li a {
     text-decoration: none;
+    font-weight: lighter;
 }
 header nav ul li a:visited {
     color: #0065FC;
@@ -44,15 +49,17 @@ header nav ul li a:hover {
     color: gray;
 }
 header nav ul li:hover {
-    border-top: 1px solid #0065FC;
+    border-top: 3px solid #0065FC;
 }
 header nav ul li {
     height: 4rem;
     padding-top: 2rem;
 }
+header .signup{
+    font-weight: bold;
+}
 
 section {
-    margin: 1rem;
     line-height: 1.5rem;
 }
 section p {
@@ -94,8 +101,9 @@ section p {
 }
 .searchbar button {
     float: right;
-    width: 30%;
-    height: 147%;
+    position: absolute;
+    width: 130px;
+    height: 2.9rem;
     margin-top: 8px;
     color: #fff;
     background: #0065FC;
@@ -104,7 +112,7 @@ section p {
     cursor: pointer;
     border-radius: 0 10px 10px 0;
 }
-.searchbar input:focus, button:focus{
+.searchbar input:focus, button:focus, .filter input:focus{
     outline: none;
 }
 .searchbar button:hover {
@@ -116,10 +124,11 @@ section p {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    margin-left: 1rem;
 }
 .filter {
-    margin-left: 3rem;
-    width: 10rem;
+    margin-left: 1.5rem;
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -132,18 +141,21 @@ section p {
     color: #0065FC;
     height: calc(3rem - 1.4rem);
     width: 2.25rem;
+    margin-left: 4px;
     border-radius: 100vh;
     padding-top: 10px;
 }
 .filter input {
-    height: 1.99rem;
-    width: 7rem;
+    height: 2rem;
+    width: fit-content;
     border-radius: 2rem;
     text-align: left;
-    padding-left: 2.5rem;
+    padding-left: 3rem;
     margin-left: 4px;
-    border: solid 2px #DEEBFF;
+    border: solid 1px #F2F2F2;
     border-left: none;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .information {
@@ -161,12 +173,16 @@ section p {
     font-weight: lighter;
 }
 .information a i {
-    color: #fff;
-    background-color: #0065FC;
-    border: solid gray 0.5px ;
-    height: 1rem;
-    width: 1rem;
-    border-radius: 5000px;
+    color: #0065FC;
+    border: solid #F2F2F2 1px ;
+    text-align: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    top: 0;
+    border-radius: 100vh;
+    padding-top: 6px;
+    padding-right: 2px;
+    padding-left: 4px;
 }
 
 article {
@@ -180,8 +196,8 @@ article {
 .hebergement {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    height: 100%;
+    width: 66%;
+    height: auto;
     padding-bottom: 10px;
     padding-left: 1rem;
     background-color: #F2F2F2;
@@ -198,9 +214,10 @@ article {
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
-    height: 100%;
-    width: 38%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 30%;
     background-color: #F2F2F2;
     border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
@@ -212,35 +229,38 @@ article .hebergement h3 {
     margin-left: 2rem;
     align-items: flex-start;
 }
+article .hebergement h4 {
+    font-weight: bolder;
+}
 article .hebergement a {
     color: black;
     text-decoration: none;
 }
 article .hebergement .card {
     display: block;
-    margin: 20px;
-    min-width: 220px;
-    max-width: 220px;
+    margin: 10px;
     padding: 5px;
-    width: 30%;
-    height: 40%;
+    width: 28%;
+    height: fit-content;
     padding-bottom: 1rem;
     background: #fff;
     border-radius: 10px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
+    font-size: 0.9rem;
 }
 article .hebergement .card:hover {
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.30),3px 3px 12px rgba(0, 0, 0, 0.1);
 }
 article .hebergement .card img {
     border-radius: 10px 10px 0 0;
-    height: 150px;
+    height: 100px;
     width: 200px;
     object-fit: cover;
 }
 article .hebergement .card .container {
     padding-left: 0.5rem;
+    line-height: 0.5rem;
 }
 article .hebergement i, aside .containerpop i {
     color: #0065FC;
@@ -256,25 +276,34 @@ article .hebergement .unrated i, aside .containerpop .unrated i{
     justify-content: space-between;
     padding-right: 2rem;
     padding-left: 2rem;
+    margin-bottom: 15px;
 }
 aside .cardpop{
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 16px;
     padding: 5px;
     background: #FFF;
     border-radius: 10px;
-    min-width: 400px;
-    height: 207px;
+    height: 150px;
+    max-width: 350px;
+    width: fit-content;
+    font-size: 0.9rem;
 }
 aside .cardpop .containerpop{
     padding-bottom: 0;
     padding-left: 20px;
+    height: 100%;
+    display: inline-block;
+    align-items: flex-start;
+    height: fit-content;
 }
 aside img{
-    object-fit: cover;
-    max-width: 200px;
-    max-height: 200px;
+    object-fit: fill;
+    width: 150px;
+    max-height: 150px;
     border-radius: 10px 0 0 10px;
 }
 aside .cardpop:hover{
@@ -288,7 +317,7 @@ aside .cardpop:hover{
     align-items: center;
     justify-content: space-between;
     height: auto;
-    width: 100%;
+    width: auto;
     margin-bottom: 4rem;
 }
 .article2 .activites h3 {
@@ -299,7 +328,7 @@ aside .cardpop:hover{
 .article2 .activites{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: fit-content;
     height: 80%;
 }
 .article2 .activitescard{
@@ -308,18 +337,20 @@ aside .cardpop:hover{
     flex-wrap: wrap;
 }
 .article2 .activites .col1 {
-    display: block;
-    width: 23.5%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 22%;
     border-radius: 15px;
     margin: 10px 0 10px 0;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
 }
 .article2 .col1 img{
     border-radius: 10px 10px 0 0;
-    height: 515px;
+    height: 90%;
     object-fit: cover;
 }
-.col1 .lieu{
+.article2 .col1 .lieu{
     padding-left: 1rem;
 }
 .article2 .activites .col2 {
@@ -327,35 +358,47 @@ aside .cardpop:hover{
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
-    width: 23.5%;
+    width: 22%;
+    height: 500px;
     border-radius: 15px;
-    margin: 10px 27px 10px 27px;
+    margin: 10px 46px 10px 46px;
 }
 .article2 .activites .col4 {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
-    width: 23.5%;
+    width: 22%;
+    height: 500px;
     border-radius: 15px;
-    margin: 10px 0px 10px 27px;
+    margin: 10px 0px 10px 46px;
 }
-.col2 .img1, .col2 .img2, .col4 .img1, .col4 .img2{
+.col2 .img1, .col4 .img2{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    height: 45%;
+    height: 55%;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
 }
-.article2 img{
-    border-radius: 10px 10px 0 0;
-    height: 200px;
-    max-width: 350px;
+.col2 .img1 img, .col4 .img2 img{
+    height: 80%;
     object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.col2 .img2 img, .col4 .img1 img{
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.col2 .img2, .col4 .img1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 35%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
 }
 .col2 .lieu, .col4 .lieu{
     padding-left: 1rem;
-    height: 10px;
 }
 .article2 .activites .col1:hover, .col2 .img1:hover, .col2 .img2:hover, .col4 .img1:hover, .col4 .img2:hover{
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.30),3px 3px 12px rgba(0, 0, 0, 0.1);
@@ -388,7 +431,7 @@ footer div ul {
 }
 footer div ul li a {
     text-decoration: none;
-    color: darkslategrey;
+    color: black;
 }
 
 

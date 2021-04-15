@@ -1,15 +1,86 @@
 @media screen and (max-width: 660px) {
     body{
-        display: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    header {
+        margin: 0;
+        display: flex;
+        height: auto;
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header img{
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        margin-bottom: 5rem;
+        width: 7rem;
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        margin: 0;
+    }
+    header nav ul{
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-wrap: wrap-reverse;
         width: 100%;
         margin: 0;
         padding: 0;
     }
+    header nav ul li{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        height: 2rem;
+    }
+    header nav ul .li1{
+        width: 50%;
+        height: 2rem;
+        justify-content: center;
+    }
+    header nav ul .li2{
+        width: 50%;
+        margin: 0;
+        height: 2rem;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+    header nav ul li .signup{
+        font-weight: bold;
+    }
+    header nav ul .li1:hover{
+        border-bottom: 1px solid #0065FC;
+        border-top: none;
+    }
+    header nav ul .li2:hover {
+        border: none;
+    }
 
-    header{
-        width: 100%;
-        height: auto;
-        flex-wrap: wrap;
+    .searchbar{
+        width: auto;
+    }
+    .searchbar button{
+        width: 50px;
+    }
+    .searchbar input{
+        width: 70%;
+    }
+    .searchbar button .fa-search{
+        background-color: #0065FC;
+        color: #fff;
+        display: block;
+    }
+    .searchbar button .search_txt{
+        display: none;
     }
 
     .filters{
@@ -23,6 +94,7 @@
     .filters .filter{
         margin: 10px;
     }
+
     aside{
         margin-bottom: 40px;
         border: none;
@@ -30,22 +102,44 @@
         width: 100%;
         border-radius: 0;
     }
+    aside .cardpop{
+        display: flex;
+        width: fit-content;
+        min-width: auto;
+        width: fit-content;
+        height: auto;
+        max-height: 150px;
+    }
+    aside .cardpop img{
+        max-width: 50%;
+        width: 100%;
+        height: 25%;
+        max-height: 150px;
+    }
+
     article {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: start ;
-        width: 100%;
+        width: auto;
         border: none;
         margin: 0;
         padding: 0;
+    }
+    article h3, article .extension, article .extension a, article .extension h3{
+        width: auto;
+        display: block;
     }
     
     article .hebergement{
         background-color: transparent;
         border: none;
         box-shadow: none;
-        width: 100%;
+        width: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 0;
     }
     article .hebergement .card{
         display: flex;
@@ -53,32 +147,39 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: left;
-        width: 100%;
-        max-width: 600px;
+        width: auto;
     }
-    .article2 {
+
+    .article2{
+        width: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .article2 .activitescard{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: start ;
-        width: 100%;
-        border: none;
-        margin: 0;
-        padding: 0;
-    }
-    .article2 .activites{
-        background-color: transparent;
-        border: none;
-        box-shadow: none;
         width: 100%;
     }
-    .article2 .activites .hebergement .activitescard{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: left;
-        width: 100%;
+    .article2 .activitescard .col1{
+        width: auto;
         max-width: 600px;
+        height: 100%;
+        margin: 10px 0 10px 0;
     }
+    .article2 .activitescard .col1 img{
+        height: auto;
+    }
+    .article2 .activitescard .col2, .article2 .activitescard .col4{
+        width: auto;
+        margin: 10px 0 30px 0;
+        justify-content: space-between;
+    }
+    .article2 .activitescard .col2 .img1, .article2 .activitescard .col2 .img2, .article2 .activitescard .col4 .img1, .article2 .activitescard .col4 .img2{
+        height: 50%
+    }
+    .article2 .activitescard .col1 .lieu,.article2 .activitescard .col2 .lieu, .article2 .activitescard .col4 .lieu{
+        height: auto;
+    }
+
 }

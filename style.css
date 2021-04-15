@@ -74,10 +74,11 @@ section p {
     justify-content: space-between;
     margin-bottom: 2rem;
 }
-.searchbar i {
+.searchbar .fa-map-marker-alt {
     float: left;
     margin-top: 0.5rem;
-    padding-top: 0.9rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
     padding-left: 0.9rem;
     border-radius: 10px 0 0 10px;
     background: #ddd;
@@ -117,6 +118,9 @@ section p {
 }
 .searchbar button:hover {
     background-color: rgba(0, 0, 255, 0.75);
+}
+.searchbar button .fa-search{
+    display: none;
 }
 
 .filters {

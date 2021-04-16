@@ -1,13 +1,20 @@
-@media screen and (max-width: 880px) and (min-width: 660px) {
+@media screen and (min-width: 661px) and (max-width: 880px) {
     body{
         display: inherit;
         width: inherit;
-        margin: none;
-        padding: none;
+        margin: 0;
+        padding: 0;
+    }
+    .searchbar input{
+        width: 75%;
     }
     .filters{
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+    }
+    .filter{
+        margin: 10px;
     }
     aside{
         margin-bottom: 40px;
@@ -15,6 +22,21 @@
         box-shadow: none;
         width: 100%;
         margin-bottom: 40px;
+        border-radius: 0;
+    }
+    aside .populaire{
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+    aside .asidetitle{
+        display: flex;
+        width: 90%;
+    }
+    aside .cardpop{
+        max-width: 290px;
+        width: auto;
     }
     article {
         display: flex;
@@ -23,7 +45,7 @@
         justify-content: start ;
         width: 100%;
         border: none;
-        margin: none;
+        margin: 0;
     }
     article .hebergement{
         background-color: transparent;
@@ -49,7 +71,11 @@
         justify-content: start ;
         width: 100%;
         border: none;
-        margin: none;
+        margin: 0;
+    }
+    .article2 .extension{
+        width: 100%;
+        margin-left: 2rem;
     }
     .article2 .activites{
         display: flex;
@@ -60,5 +86,17 @@
         margin: auto;
         margin: 10px;
         width: 100%;
+    }
+    .article2 .activites .activitescard .col1, .article2 .activites .activitescard  .col2, .article2 .activites .activitescard  .col4{
+        width: 40%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    footer div {
+        display: block;
+        padding-left: 1rem;
+        width: 30%;
+        width: auto;
+        margin: auto;
     }
 }

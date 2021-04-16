@@ -1,7 +1,6 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-
 body{
     display: block;
     width: 1200px;
@@ -10,12 +9,10 @@ body{
     top: 0;
     margin: auto;
 }
-
 header, section, article, .article2{
     margin-left: 1rem;
     margin-right: 1rem;
 }
-
 header {
     display: flex;
     height: 10rem;
@@ -42,14 +39,14 @@ header nav ul li a {
     text-decoration: none;
     font-weight: lighter;
 }
-header nav ul li a:visited {
-    color: #0065FC;
-}
-header nav ul li a:hover {
+header nav ul .li1 a:visited {
     color: gray;
 }
-header nav ul li:hover {
-    border-top: 3px solid #0065FC;
+header nav ul .li1 a:hover {
+    color: #0065FC;
+}
+header nav ul .li1:hover {
+    border-top: 2px solid #0065FC;
 }
 header nav ul li {
     height: 4rem;
@@ -57,15 +54,14 @@ header nav ul li {
 }
 header .signup{
     font-weight: bold;
+    color: #0065FC;
 }
-
 section {
     line-height: 1.5rem;
 }
 section p {
     font-weight: normal;
 }
-
 .searchbar {
     height: 2rem;
     width: 25rem;
@@ -89,7 +85,7 @@ section p {
     height: 100%;
 }
 .searchbar input {
-    width: 55.5%;
+    width: 75%;
     height: 102%;
     padding: 6px;
     margin-right: 0;
@@ -122,13 +118,11 @@ section p {
 .searchbar button .fa-search{
     display: none;
 }
-
 .filters {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 1rem;
 }
 .filter {
     margin-left: 1.5rem;
@@ -161,7 +155,6 @@ section p {
     font-weight: bold;
     font-size: 1rem;
 }
-
 .information {
     display: flex;
     flex-direction: row;
@@ -188,7 +181,6 @@ section p {
     padding-right: 2px;
     padding-left: 4px;
 }
-
 article {
     display: flex;
     flex-direction: row;
@@ -203,7 +195,6 @@ article {
     width: 66%;
     height: auto;
     padding-bottom: 10px;
-    padding-left: 1rem;
     background-color: #F2F2F2;
     border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
@@ -213,7 +204,9 @@ article {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
+    margin: 0.5rem;
 }
 aside {
     display: flex;
@@ -226,7 +219,6 @@ aside {
     border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
 }
-
 article .hebergement h3 {
     display: inline-block;
     width: 100%;
@@ -272,7 +264,6 @@ article .hebergement i, aside .containerpop i {
 article .hebergement .unrated i, aside .containerpop .unrated i{
     color: #F2F2F2;
 }
-
 .asidetitle{
     display: flex;
     flex-direction: row;
@@ -285,9 +276,7 @@ article .hebergement .unrated i, aside .containerpop .unrated i{
 aside .cardpop{
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 16px;
+    margin: 0px 20px 20px 20px;
     padding: 5px;
     background: #FFF;
     border-radius: 10px;
@@ -314,7 +303,6 @@ aside .cardpop:hover{
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.30),3px 3px 12px rgba(0, 0, 0, 0.1);
     transition-duration: 0.4s;
 }
-
 .article2{
     display: flex;
     flex-direction: row;
@@ -408,7 +396,6 @@ aside .cardpop:hover{
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.30),3px 3px 12px rgba(0, 0, 0, 0.1);
     transition-duration: 0.4s;
 }
-
 footer {
     position: relative;
     bottom: 0;
@@ -438,8 +425,6 @@ footer div ul li a {
     color: black;
 }
 
-
-
 @media (max-width: 880px) {
     footer {
         position: relative;
@@ -451,6 +436,6 @@ footer div ul li a {
         display: block;
         width: 100%;
         margin-bottom: 40px;
-        text-align: center;
+        text-align: start;
     }
 }

@@ -124,7 +124,7 @@ section p {
     outline: none;
 }
 .searchbar button:hover {
-    background-color: rgba(0, 0, 255, 0.75);
+    background-color: rgba(0, 0, 255, 0.7);
 }
 .searchbar button .fa-search{
     display: none;
@@ -144,19 +144,24 @@ section p {
     justify-content: flex-start;
     height: 2rem;
 }
+.filter:hover{
+    box-shadow: 3px 3px 12px rgba(0, 101, 252, 0.30),3px 3px 12px rgba(0, 101, 252, 0.1);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
 .filter i {
     position: absolute;
     background-color: #DEEBFF;
     color: #0065FC;
     height: calc(3rem - 1.4rem);
     width: 2.25rem;
-    margin-left: 4px;
     border-radius: 100vh;
     padding-top: 10px;
 }
 .filter input {
     height: 2rem;
-    width: fit-content;
+    width: 10rem;
     border-radius: 2rem;
     text-align: left;
     padding-left: 3rem;
@@ -285,13 +290,15 @@ article .hebergement .unrated i, aside .containerpop .unrated i{
     margin-bottom: 15px;
 }
 aside .cardpop{
+    text-decoration: none;
+    color: black;
     display: flex;
     flex-direction: row;
     margin: 0px 20px 20px 20px;
     padding: 5px;
     background: #FFF;
     border-radius: 10px;
-    height: 150px;
+    height: 146.5px;
     max-width: 350px;
     width: fit-content;
     font-size: 0.9rem;
@@ -342,6 +349,8 @@ aside .cardpop:hover{
 .article2 .activites .col1 {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: black;
     height: 500px;
     width: 22%;
     border-radius: 15px;
@@ -379,6 +388,8 @@ aside .cardpop:hover{
 .col2 .img1, .col4 .img2{
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: black;
     border-radius: 10px;
     height: 55%;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);
@@ -396,6 +407,8 @@ aside .cardpop:hover{
 .col2 .img2, .col4 .img1{
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: black;
     border-radius: 10px;
     height: 35%;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30),3px 3px 6px rgba(0, 0, 0, 0.1);

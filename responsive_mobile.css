@@ -65,6 +65,14 @@
         border-top: none;
         color: #0065FC;
     }
+    header nav ul #active{
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+        color: #0065FC;
+    }
+    header nav ul #active a{
+        font-weight: normal;
+    }
     header nav ul .li2:hover {
         border: none;
         color: #0065FC;
@@ -132,7 +140,9 @@
         width: auto;
         display: block;
     }
-    
+    article .extension h3{
+        margin-left: 0;
+    }
     article .hebergement{
         background-color: transparent;
         border: none;
@@ -162,6 +172,10 @@
     }
     .article2 .activites{
         width: 100%;
+    }
+    .article2 .activites .extension{
+        margin: auto;
+        width: 416px;
     }
 
     .article2 .activitescard{

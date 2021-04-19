@@ -15,7 +15,7 @@ header, section, article, .article2{
 }
 header {
     display: flex;
-    height: 10rem;
+    height: 6rem;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -23,23 +23,20 @@ header {
 header img {
     box-sizing: border-box;
     width: 7rem;
-    margin-bottom: 3.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 header nav ul {
     width: 30rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     height: 100%;
     list-style: none;
     display: flex;
     vertical-align: top;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 header nav ul li a {
-    border: solid red 2px;
-    display: block;
-    height: 4rem;
-    padding-bottom: 0;
     text-decoration: none;
     font-weight: lighter;
 }
@@ -49,12 +46,21 @@ header nav ul .li1 a:visited {
 header nav ul .li1 a:hover {
     color: #0065FC;
 }
+header nav ul #active{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+header nav ul #active a{
+    color: #0065FC;
+    font-weight: normal;
+}
 header nav ul .li1:hover {
     border-top: 2px solid #0065FC;
 }
 header nav ul li {
-    border: solid greenyellow 1px;
+    text-align: center;
     height: 4rem;
+    width: 8rem;
     padding-top: 2rem;
 }
 header .signup{

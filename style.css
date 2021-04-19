@@ -451,5 +451,7 @@ footer div ul li a {
         width: 100%;
         margin-bottom: 40px;
         text-align: start;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 }

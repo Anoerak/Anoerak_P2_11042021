@@ -47,15 +47,15 @@ header nav ul .li1 a:hover {
     color: #0065FC;
 }
 header nav ul #active{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    color: gray;
+    border-top: 3px solid #0065FC;
 }
 header nav ul #active a{
     color: #0065FC;
     font-weight: normal;
 }
 header nav ul .li1:hover {
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
 }
 header nav ul li {
     text-align: center;

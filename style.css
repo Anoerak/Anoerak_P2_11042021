@@ -36,6 +36,10 @@ header nav ul {
     justify-content: space-around;
 }
 header nav ul li a {
+    border: solid red 2px;
+    display: block;
+    height: 4rem;
+    padding-bottom: 0;
     text-decoration: none;
     font-weight: lighter;
 }
@@ -49,6 +53,7 @@ header nav ul .li1:hover {
     border-top: 2px solid #0065FC;
 }
 header nav ul li {
+    border: solid greenyellow 1px;
     height: 4rem;
     padding-top: 2rem;
 }

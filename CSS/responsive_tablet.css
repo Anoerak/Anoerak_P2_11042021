@@ -103,5 +103,6 @@
         width: 30%;
         width: auto;
         margin: auto;
-    }
+        margin-top: 0;
+        }
 }

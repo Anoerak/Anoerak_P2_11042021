@@ -47,15 +47,15 @@ header nav ul .li1 a:hover {
     color: #0065FC;
 }
 header nav ul #active{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    color: gray;
+    border-top: 3px solid #0065FC;
 }
 header nav ul #active a{
     color: #0065FC;
     font-weight: normal;
 }
 header nav ul .li1:hover {
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
 }
 header nav ul li {
     text-align: center;
@@ -200,7 +200,7 @@ section p {
 article {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     height: auto;
     margin-bottom: 4rem;
@@ -209,8 +209,7 @@ article {
     display: flex;
     flex-direction: column;
     width: 66%;
-    height: auto;
-    padding-bottom: 10px;
+    height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
@@ -221,16 +220,18 @@ article {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    height: auto;
     margin: 0.5rem;
 }
 aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: auto;
+    justify-content: flex-start;
+    height: 100%;
     width: 30%;
+    margin: 0px;
+    padding-bottom: 30px;
     background-color: #F2F2F2;
     border-radius: 20px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15),3px 3px 6px rgba(0, 0, 0, 0.05);
@@ -287,18 +288,17 @@ article .hebergement .unrated i, aside .containerpop .unrated i{
     justify-content: space-between;
     padding-right: 2rem;
     padding-left: 2rem;
-    margin-bottom: 15px;
 }
 aside .cardpop{
     text-decoration: none;
     color: black;
     display: flex;
     flex-direction: row;
-    margin: 0px 20px 20px 20px;
+    margin: 20px;
     padding: 5px;
     background: #FFF;
     border-radius: 10px;
-    height: 146.5px;
+    height: 135px;
     max-width: 350px;
     width: fit-content;
     font-size: 0.9rem;
@@ -436,8 +436,8 @@ footer {
 }
 footer div {
     display: block;
-    padding-left: 2rem;
     width: 30%;
+    padding-left: 2rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
